@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{04E344BB-8B6A-450D-BBCA-1F605B468936}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LygTally</RootNamespace>
+    <AssemblyName>LygTally</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="leo">
+      <HintPath>E:\WorkSpace\Leo\leo\bin\Release\leo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CompanyInfo\intro.aspx" />
+    <Content Include="Dll\leo.dll" />
+    <Content Include="Flash\banner.swf" />
+    <Content Include="Flash\123.gif" />
+    <Content Include="Images\1.png" />
+    <Content Include="Images\2.png" />
+    <Content Include="Images\4.png" />
+    <Content Include="Images\5.png" />
+    <Content Include="Images\6.png" />
+    <Content Include="Images\7.png" />
+    <Content Include="Images\8.png" />
+    <Content Include="Images\bn0-xl.jpg" />
+    <Content Include="Images\bn1-xl.jpg" />
+    <Content Include="Images\bn10-xl.jpg" />
+    <Content Include="Images\bn10.jpg" />
+    <Content Include="Images\bn11-xl.jpg" />
+    <Content Include="Images\bn11.jpg" />
+    <Content Include="Images\bn12-xl.jpg" />
+    <Content Include="Images\bn12.jpg" />
+    <Content Include="Images\bn2-xl.jpg" />
+    <Content Include="Images\bn2.JPG" />
+    <Content Include="Images\bn3-xl.jpg" />
+    <Content Include="Images\bn3.JPG" />
+    <Content Include="Images\bn4-xl.jpg" />
+    <Content Include="Images\bn5-xl.jpg" />
+    <Content Include="Images\bn6-xl.jpg" />
+    <Content Include="Images\bn6.jpg" />
+    <Content Include="Images\bn7-xl.jpg" />
+    <Content Include="Images\bn7.jpg" />
+    <Content Include="Images\bn8-xl.jpg" />
+    <Content Include="Images\bn8.jpg" />
+    <Content Include="Images\bn9-xl.jpg" />
+    <Content Include="Images\bn9.jpg" />
+    <Content Include="Images\sign.png" />
+    <Content Include="Images\bn1.JPG" />
+    <Content Include="Images\bn4.jpg" />
+    <Content Include="Images\bn5.jpg" />
+    <Content Include="Images\bn0.jpg" />
+    <Content Include="Images\ct1.JPG" />
+    <Content Include="Business\wlship.aspx" />
+    <Content Include="Business\WLShipDetail.aspx" />
+    <Content Include="CompanyInfo\About.aspx" />
+    <Content Include="CompanyInfo\BulkShipTally.aspx" />
+    <Content Include="CompanyInfo\Business.aspx" />
+    <Content Include="CompanyInfo\Contact.aspx" />
+    <Content Include="CompanyInfo\ContainerShipTally.aspx" />
+    <Content Include="CompanyInfo\Culture.aspx" />
+    <Content Include="CompanyInfo\DevanningTally.aspx" />
+    <Content Include="CompanyInfo\History.aspx" />
+    <Content Include="CompanyInfo\Honor.aspx" />
+    <Content Include="CompanyInfo\Leader.aspx" />
+    <Content Include="CompanyInfo\NormalShipTally.aspx" />
+    <Content Include="CompanyInfo\Song.aspx" />
+    <Content Include="CompanyInfo\TallyInfo.aspx" />
+    <Content Include="default.aspx" />
+    <Content Include="Fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Frame\Banner.html" />
+    <Content Include="Frame\BannerNews.html" />
+    <Content Include="Frame\BannerWithTitle.html" />
+    <Content Include="Frame\footer.html" />
+    <Content Include="Frame\head.html" />
+    <Content Include="Frame\top.html" />
+    <Content Include="Images\arrow.png" />
+    <Content Include="Images\banner1.jpg" />
+    <Content Include="Images\bg-1.jpg" />
+    <Content Include="Images\gepu.jpg" />
+    <Content Include="Images\icon.png" />
+    <Content Include="Images\ct3.JPG" />
+    <Content Include="Images\ct4.JPG" />
+    <Content Include="Images\ct6.JPG" />
+    <Content Include="Images\ldzc.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\NEWSBG.jpg" />
+    <Content Include="Images\newsimg.png" />
+    <Content Include="Images\search.ico" />
+    <Content Include="Images\YGWL_2D_CODE.jpg" />
+    <Content Include="Images\yw1.jpg" />
+    <Content Include="Images\yw2.jpg" />
+    <Content Include="Images\ZLJY_2D_CODE.png" />
+    <Content Include="Images\ct2.JPG" />
+    <Content Include="Images\ct5.jpg" />
+    <Content Include="Images\ct8.JPG" />
+    <Content Include="Images\ct7.JPG" />
+    <Content Include="Jquery\jquery-2.1.4.min.js" />
+    <Content Include="Jquery\jquery-2.2.3.js" />
+    <Content Include="Jquery\jquery.mobile-1.4.5.min.map" />
+    <Content Include="Mp3\F.mp3" />
+    <Content Include="Mp3\G.mp3" />
+    <Content Include="Mp3\hF.mp3" />
+    <Content Include="Mp3\hG.mp3" />
+    <Content Include="News\CompanyNews.aspx" />
+    <Content Include="News\Detail.aspx" />
+    <Content Include="News\List.aspx" />
+    <Content Include="News\search.aspx" />
+    <Content Include="OA\logo.jpg" />
+    <Content Include="OA\logo.png" />
+    <Content Include="OA\OA.html" />
+    <Content Include="ServiceOnline\Ship.aspx" />
+    <Content Include="wx\ConCheck.aspx" />
+    <Content Include="wx\TallyBoat1.aspx" />
+    <Content Include="Jquery\jquery.cookie.js" />
+    <Content Include="Css\bootstrap.css" />
+    <Content Include="Js\bootstrap.min.js" />
+    <Content Include="Jquery\jquery-1.11.1.min.js" />
+    <Content Include="Jquery\jquery.plugin.js" />
+    <Content Include="Js\loader.js" />
+    <Content Include="Css\main.css" />
+    <Content Include="Js\main.js" />
+    <Content Include="Js\slide.js" />
+    <Content Include="Fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Properties\PublishProfiles\LygTally.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Contract\upload.aspx" />
+    <Content Include="Jquery\jquery.mobile-1.4.5.css" />
+    <Content Include="Jquery\jquery.mobile-1.4.5.js" />
+    <Content Include="Jquery\jquery.mobile-1.4.5.min.css" />
+    <Content Include="Jquery\jquery.mobile-1.4.5.min.js" />
+    <Content Include="Jquery\jquery.mobile.external-png-1.4.5.css" />
+    <Content Include="Jquery\jquery.mobile.external-png-1.4.5.min.css" />
+    <Content Include="Jquery\jquery.mobile.icons-1.4.5.css" />
+    <Content Include="Jquery\jquery.mobile.icons-1.4.5.min.css" />
+    <Content Include="Jquery\jquery.mobile.inline-png-1.4.5.css" />
+    <Content Include="Jquery\jquery.mobile.inline-png-1.4.5.min.css" />
+    <Content Include="Jquery\jquery.mobile.inline-svg-1.4.5.css" />
+    <Content Include="Jquery\jquery.mobile.inline-svg-1.4.5.min.css" />
+    <Content Include="Jquery\jquery.mobile.structure-1.4.5.css" />
+    <Content Include="Jquery\jquery.mobile.structure-1.4.5.min.css" />
+    <Content Include="Jquery\jquery.mobile.theme-1.4.5.css" />
+    <Content Include="Jquery\jquery.mobile.theme-1.4.5.min.css" />
+    <Content Include="Web.config" />
+    <Content Include="wx\TallyBoat.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\wlship.aspx.cs">
+      <DependentUpon>wlship.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Business\wlship.aspx.designer.cs">
+      <DependentUpon>wlship.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Business\WLShipDetail.aspx.cs">
+      <DependentUpon>WLShipDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Business\WLShipDetail.aspx.designer.cs">
+      <DependentUpon>WLShipDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyInfo\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyInfo\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyInfo\BulkShipTally.aspx.cs">
+      <DependentUpon>BulkShipTally.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyInfo\BulkShipTally.aspx.designer.cs">
+      <DependentUpon>BulkShipTally.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyInfo\Business.aspx.cs">
+      <DependentUpon>Business.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyInfo\Business.aspx.designer.cs">
+      <DependentUpon>Business.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyInfo\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyInfo\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyInfo\ContainerShipTally.aspx.cs">
+      <DependentUpon>ContainerShipTally.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyInfo\ContainerShipTally.aspx.designer.cs">
+      <DependentUpon>ContainerShipTally.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyInfo\Culture.aspx.cs">
+      <DependentUpon>Culture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyInfo\Culture.aspx.designer.cs">
+      <DependentUpon>Culture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyInfo\DevanningTally.aspx.cs">
+      <DependentUpon>DevanningTally.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyInfo\DevanningTally.aspx.designer.cs">
+      <DependentUpon>DevanningTally.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyInfo\History.aspx.cs">
+      <DependentUpon>History.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyInfo\History.aspx.designer.cs">
+      <DependentUpon>History.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyInfo\Honor.aspx.cs">
+      <DependentUpon>Honor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyInfo\Honor.aspx.designer.cs">
+      <DependentUpon>Honor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyInfo\intro.aspx.cs">
+      <DependentUpon>intro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyInfo\intro.aspx.designer.cs">
+      <DependentUpon>intro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyInfo\Leader.aspx.cs">
+      <DependentUpon>Leader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyInfo\Leader.aspx.designer.cs">
+      <DependentUpon>Leader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyInfo\NormalShipTally.aspx.cs">
+      <DependentUpon>NormalShipTally.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyInfo\NormalShipTally.aspx.designer.cs">
+      <DependentUpon>NormalShipTally.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyInfo\Song.aspx.cs">
+      <DependentUpon>Song.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyInfo\Song.aspx.designer.cs">
+      <DependentUpon>Song.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyInfo\TallyInfo.aspx.cs">
+      <DependentUpon>TallyInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyInfo\TallyInfo.aspx.designer.cs">
+      <DependentUpon>TallyInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\upload.aspx.cs">
+      <DependentUpon>upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contract\upload.aspx.designer.cs">
+      <DependentUpon>upload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="News\CompanyNews.aspx.cs">
+      <DependentUpon>CompanyNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News\CompanyNews.aspx.designer.cs">
+      <DependentUpon>CompanyNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="News\Detail.aspx.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News\Detail.aspx.designer.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="News\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="News\search.aspx.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News\search.aspx.designer.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceOnline\Ship.aspx.cs">
+      <DependentUpon>Ship.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ServiceOnline\Ship.aspx.designer.cs">
+      <DependentUpon>Ship.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wx\ConCheck.aspx.cs">
+      <DependentUpon>ConCheck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wx\ConCheck.aspx.designer.cs">
+      <DependentUpon>ConCheck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wx\TallyBoat.aspx.cs">
+      <DependentUpon>TallyBoat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wx\TallyBoat.aspx.designer.cs">
+      <DependentUpon>TallyBoat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wx\TallyBoat1.aspx.cs">
+      <DependentUpon>TallyBoat1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wx\TallyBoat1.aspx.designer.cs">
+      <DependentUpon>TallyBoat1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>38099</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:38099/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,50 @@
+﻿<style type="text/css">
+    @media (max-width:991px) {
+        .banner-img {
+            display:none
+        }
+    }
+    </style>
+<img src="../Images/sign.png" class="banner-img" style="position: absolute; z-index: 1000;padding-left:10%" />
+<div class="dk-inner-banner" id="bn" style="background-image: url()"></div>
+<script language="JavaScript">
+    var bn = $('#bn');
+    var interval = 3000;
+    var i = 0;
+    var max_img = 12;
+
+    bn.css('background-image', 'url(' + getimg() + ')');
+
+    window.onload = play();
+
+    function play() {
+        timer = setTimeout(function () {
+            //http://www.w3school.com.cn/jsref/met_win_settimeout.asp
+            //setTimeout() 方法用于在指定的毫秒数后调用函数或计算表达式。
+            change();
+            //http://www.w3school.com.cn/jquery/event_trigger.asp
+            //trigger() 方法触发被选元素的指定事件类型。
+            play();
+            //提示：setTimeout() 只执行 code 一次。如果要多次调用，请使用 setInterval() 或者让 code 自身再次调用 setTimeout()。
+        }, interval);
+    }
+
+    function change() {
+        bn.fadeTo(500, 0.5, function () {
+            bn.css('background-image', 'url(' + getimg() + ')');
+            bn.css('opacity', 0.5);
+            bn.fadeTo(500, 1);
+        })
+    }
+
+    function getimg()
+    {
+        if (i < max_img) {
+            i++;
+        }
+        else {
+            i = 0;
+        }
+        return "../images/bn" + i + (screen.width > 1500 ? "-xl" : "") + ".jpg";
+    }
+</script>

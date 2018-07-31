@@ -1,0 +1,179 @@
+﻿<header style="z-index: 2000">
+    <div class="container dk-header-top">
+        <div class="dk-brand-wrap">
+            <a class="navbar-brand" href="../default.aspx"><img class="img-responsive" src="../images/LOGO.png"></a>
+        </div>
+        <div class="dk-navsub hidden-xs">
+            <!--<div class="dk-navsub-nostyle">
+                <a href="http://www.suning.com.cn/zh-cn/page/show.html?cid=445">常用链接</a>
+                <a href="http://ewp.suning.com.cn/main/login.jsp">公司内网</a>
+            </div>-->
+            <div class="dk-navsub-share">
+                <a style="text-decoration: none;" href="../CompanyInfo/About.aspx">云港外理</a>
+                <a class="icon icon-weixin" href="javascript:;" data-placement="bottom" data-toggle="popover" data-trigger="hover" data-template="&lt;div class=&quot;popover&quot; role=&quot;tooltip&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-content dk-loading&quot; style=&quot;padding:0&quot;&gt;&lt;/div&gt;&lt;/div&gt;" data-content="&lt;img src=&quot;../images/YGWL_2D_CODE.jpg&quot; height=100 width=100&gt;" data-original-title="" title="">微信</a>
+                <a style="text-decoration: none;" href="../CompanyInfo/intro.aspx">中理检验</a>
+                <a class="icon icon-weixin" href="javascript:;" data-placement="bottom" data-toggle="popover" data-trigger="hover" data-template="&lt;div class=&quot;popover&quot; role=&quot;tooltip&quot;&gt;&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;popover-content dk-loading&quot; style=&quot;padding:0&quot;&gt;&lt;/div&gt;&lt;/div&gt;" data-content="&lt;img src=&quot;../images/ZLJY_2D_CODE.PNG&quot; height=100 width=100&gt;" data-original-title="" title="">微信</a>
+            </div>
+        </div>
+        <script type="text/javascript">
+            function goto() {
+                var key = $.trim($('#key').val());
+                if (key == '') {
+                    alert('请输入搜索关键词。');
+                    $('#key').focus();
+                    return false;
+                }
+                // window.location.href="/zh-cn/search/index.html?keywords="+key;
+            }
+        </script>
+        <form class="navbar-form dk-search-header hidden-xs" action="../News/search.aspx" method="get" role="search">
+            <div class="form-group">
+                <input type="text" value="" name="keywords" id="key" class="form-control" placeholder="请输入新闻标题">
+            </div>
+            <button type="submit" onclick="goto()"><span class="icon icon-search"></span></button>
+        </form>
+        <ul class="dk-navbar hidden-xs" id="j_navdropdown">
+            <li><a href="../default.aspx">首页</a></li>
+            <li class=""><a href="#">公司概览</a></li>
+            <li class=""><a href="#">业务明细</a></li>
+            <li><a href="#">新闻中心</a></li>
+            <li><a href="#">企业文化</a></li>
+            <li class=""><a href="#">在线服务</a></li>
+            <li class=""><a href="#">信息中心</a></li>
+            <li class=""><a href="#">员工办公</a></li>
+        </ul>
+        <div class="dk-nav-mobile visible-xs">
+            <div class="dk-search-toggle j_toggle" data-target="#dk-js-header-search" data-hidden=".dk-search-toggle">
+                <span class="icon icon-lgsearch"></span>
+            </div>
+            <button type="button" class="navbar-toggle j_toggle" data-target="#dk-js-header-nav" data-hidden=".navbar-toggle">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+    </div>
+    <!-- 桌面导航下拉 -->
+    <div class="dk-nav-main" id="dk-js-navdropdown" style="display: none;">
+        <div class="container">
+            <ul class="item-1" style="display: none;">
+                <li><a href="../CompanyInfo/About.aspx">公司简介</a></li>
+                <li><a href="../CompanyInfo/Leader.aspx">领导致辞</a></li>
+                <li><a href="../CompanyInfo/Business.aspx">业务介绍</a></li>
+                <li><a href="../CompanyInfo/Contact.aspx">联系我们</a></li>
+            </ul><ul class="item-2" style="display: none;">
+                <li><a href="../CompanyInfo/NormalShipTally.aspx">普通船理货</a></li>
+                <li><a href="../CompanyInfo/ContainerShipTally.aspx">集装箱理货</a></li>
+                <li><a href="../CompanyInfo/DevanningTally.aspx">装拆箱理货</a></li>
+                <li><a href="../CompanyInfo/BulkShipTally.aspx">散装船理货</a></li>
+                <li><a href="../CompanyInfo/TallyInfo.aspx">理货信息</a></li>
+            </ul><ul class="item-3" style="display: none;">
+                <li><a href="../News/CompanyNews.aspx?page=1">公司新闻</a></li>
+                <li><a href="../News/List.aspx?ID=20&page=1">集团新闻</a></li>
+                <li><a href="../News/List.aspx?ID=19&page=1">行业新闻</a></li>
+            </ul><ul class="item-4" style="display: none;">
+                <li><a href="../CompanyInfo/Culture.aspx">公司文化</a></li>
+                <li><a href="../CompanyInfo/History.aspx">公司历程</a></li>
+                <li><a href="../CompanyInfo/Honor.aspx">公司荣誉</a></li>
+                <li><a href="../CompanyInfo/Song.aspx">公司歌曲</a></li>
+            </ul><ul class="item-5" style="display: none;">
+                <li><a href="../ServiceOnline/Ship.aspx">作业动态</a></li>
+                <li><a href="../old/ServiceOnline/SZH.aspx">散杂货理货</a></li>
+                <li><a href="../old/ServiceOnline/JZX.aspx">集装箱理货</a></li>
+                <li><a href="../old/ServiceOnline/ZCX.aspx">装拆箱理货</a></li>
+            </ul><ul class="item-6" style="display: none;">
+                <li><a href="../News/List.aspx?ID=2&page=1">通知公告</a></li>
+                <li><a href="../old/admin/admin.aspx">短信平台</a></li>
+                <li><a href="http://168.100.1.71">决策分析</a></li>
+            </ul><ul class="item-7" style="display: block;">
+                <li><a href="http://mail.lygtally.com/">员工信箱</a></li>
+                <li><a href="http://218.92.115.51/portal/index_blue.jsp">OA系统</a></li>
+                <li><a href="../OA/OA.html">手机OA</a></li>
+                <li><a href="http://10.122.9.1">公司内网</a></li>
+                <li><a href="http://www.mylygport.com/">集团内网</a></li>
+                     
+            </ul>
+        </div>
+    </div>
+    <!-- 移动端导航下拉 -->
+    <nav class="dk-mobile-nav" id="dk-js-header-nav">
+        <span class="dk-caret-top" caret-size="large"></span>
+        <ul id="j_accordion">
+            <li>
+                <a href="../default.aspx" class="drop-title">首页</a>
+            </li>
+            <li>
+                <a href="#" class="drop-title">公司概览</a>
+                <ul>
+                    <li><a href="../CompanyInfo/About.aspx">公司简介</a></li>
+                    <li><a href="../CompanyInfo/Leader.aspx">领导致辞</a></li>
+                    <li><a href="../CompanyInfo/Business.aspx">业务介绍</a></li>
+                    <li><a href="../CompanyInfo/Contact.aspx">联系我们</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="drop-title">业务明细</a>
+                <ul>
+                    <li><a href="../CompanyInfo/NormalShipTally.aspx">普通船理货</a></li>
+                    <li><a href="../CompanyInfo/ContainerShipTally.aspx">集装箱理货</a></li>
+                    <li><a href="../CompanyInfo/DevanningTally.aspx">装拆箱理货</a></li>
+                    <li><a href="../CompanyInfo/BulkShipTally.aspx">散装船理货</a></li>
+                    <li><a href="../CompanyInfo/TallyInfo.aspx">理货信息</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="drop-title">新闻中心</a>
+                <ul>
+                    <li><a href="../News/CompanyNews.aspx?page=1">公司新闻</a></li>
+                    <li><a href="../News/List.aspx?ID=20&page=1">集团新闻</a></li>
+                    <li><a href="../News/List.aspx?ID=19&page=1">行业新闻</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="drop-title">企业文化</a>
+                <ul>
+                    <li><a href="../CompanyInfo/Culture.aspx">公司文化</a></li>
+                    <li><a href="../CompanyInfo/History.aspx">公司历程</a></li>
+                    <li><a href="../CompanyInfo/Honor.aspx">公司荣誉</a></li>
+                    <li><a href="../CompanyInfo/Song.aspx">公司歌曲</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="drop-title">在线服务</a>
+                <ul>
+                    <li><a href="../ServiceOnline/Ship.aspx">作业动态</a></li>
+                    <li><a href="../old/ServiceOnline/SZH.aspx">散杂货理货</a></li>
+                    <li><a href="../old/ServiceOnline/JZX.aspx">集装箱理货</a></li>
+                    <li><a href="../old/ServiceOnline/ZCX.aspx">装拆箱理货</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="drop-title">信息中心</a>
+                <ul>
+                    <li><a href="../News/List.aspx?ID=2&page=1">通知公告</a></li>
+                    <li><a href="./old/admin/admin.aspx">短信平台</a></li>
+                    <li><a href="http://168.100.1.71">决策分析</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="drop-title">员工办公</a>
+                <ul>
+                    <li><a href="http://mail.lygtally.com/">员工信箱</a></li>
+                    <li><a href="http://218.92.115.51/portal/index_blue.jsp">OA系统</a></li>
+                    <li><a href="../OA/OA.html">手机OA</a></li>
+                    <li><a href="http://10.122.9.1">内网入口</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <!-- 移动端搜索条下拉 -->
+    <div class="dk-mobile-search clearfix" id="dk-js-header-search">
+        <span class="dk-caret-top" caret-size="large"></span>
+        <form class="navbar-form" role="search" action="../News/search.aspx" method="get">
+            <div class="form-group">
+                <input type="text" value="" name="keywords" id="key" class="form-control" placeholder="请输入新闻标题">
+            </div>
+            <button type="submit">搜索</button>
+        </form>
+    </div>
+</header>

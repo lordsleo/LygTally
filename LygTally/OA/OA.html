@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="apple-mobile-web-app-title" content="" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>连云港外轮理货有限公司临时OA登录入口</title>
+    <script src="../Jquery/jquery-2.1.4.min.js"></script>
+    <link href="../Jquery/jquery.mobile-1.4.5.css" rel="stylesheet" />
+    <script src="../Jquery/jquery.mobile-1.4.5.js"></script>
+    <script src="../Jquery/jquery.cookie.js"></script>
+
+    <script type="text/javascript">
+        function log() {
+            var user = document.getElementById("user").value;
+            var psw =document.getElementById("psw").value;
+            window.location.href = "http://218.92.115.51/portal/m_index_sso.jsp?userid=" + user.toLowerCase() + "&pwd=" + psw;
+
+
+            if (document.getElementById("rmbUser").checked) {
+                var userName = $("#user").val();
+                var passWord = $("#psw").val();
+                $.cookie("rmbUser", "true", { expires: 500 }); // 存储一个带7天期限的 cookie
+                $.cookie("userName", userName, { expires: 500 }); // 存储一个带7天期限的 cookie
+                $.cookie("passWord", passWord, { expires: 500 }); // 存储一个带7天期限的 cookie
+            }
+            else {
+                $.cookie("rmbUser", "false", { expires: -1 });        // 删除 cookie
+                $.cookie("userName", '', { expires: -1 });
+                $.cookie("passWord", '', { expires: -1 });
+            }
+        }
+
+        //初始化页面时验证是否记住了密码
+        $(document).ready(function () {
+            if ($.cookie("rmbUser") == "true") {
+                $("#rmbUser").attr("checked", true);
+                $("#user").val($.cookie("userName"));
+                $("#psw").val($.cookie("passWord"));
+            }
+        });
+
+    </script>
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header">
+            <h1 style="COLOR:blue; font-size:10pt; line-height:100%">外理临时OA系统</h1>
+        </div>
+        <img src="logo.jpg" style="width:100%"/>
+        <div data-role="content">
+                <input type="text" name="fname" id="user" placeholder="请输入用户名">
+                <input type="password" name="fname" id="psw" placeholder="请输入密码">
+            <br />
+            <input type="checkbox" checked="checked" class="checkbox" id="rmbUser">
+            <label for="rmbUser">记住密码</label>
+            <br />
+                <button onclick="log()">登录</button>
+</div>
+        <div data-role="footer" data-position="fixed">
+            <h1 style="COLOR:gray; font-size:9pt; line-height:150%">本网站仅供连云港云外轮理货有限公司内部使用<br />技术支持 张超 电话：18012172333</h1>
+        </div>
+    </div>
+
+</body>
+</html>
